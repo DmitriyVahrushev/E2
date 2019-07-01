@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Dmitriy\CLionProjects\E2
+CMAKE_SOURCE_DIR = D:\repos\E2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Dmitriy\CLionProjects\E2\cmake-build-debug
+CMAKE_BINARY_DIR = D:\repos\E2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmitriy\CLionProjects\E2\cmake-build-debug\CMakeFiles C:\Users\Dmitriy\CLionProjects\E2\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\repos\E2\cmake-build-debug\CMakeFiles D:\repos\E2\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Dmitriy\CLionProjects\E2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\repos\E2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,87 @@ BigInteger.cpp.s:
 	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/BigInteger.cpp.s
 .PHONY : BigInteger.cpp.s
 
+DigitalSignature.obj: DigitalSignature.cpp.obj
+
+.PHONY : DigitalSignature.obj
+
+# target to build an object file
+DigitalSignature.cpp.obj:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/DigitalSignature.cpp.obj
+.PHONY : DigitalSignature.cpp.obj
+
+DigitalSignature.i: DigitalSignature.cpp.i
+
+.PHONY : DigitalSignature.i
+
+# target to preprocess a source file
+DigitalSignature.cpp.i:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/DigitalSignature.cpp.i
+.PHONY : DigitalSignature.cpp.i
+
+DigitalSignature.s: DigitalSignature.cpp.s
+
+.PHONY : DigitalSignature.s
+
+# target to generate assembly for a file
+DigitalSignature.cpp.s:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/DigitalSignature.cpp.s
+.PHONY : DigitalSignature.cpp.s
+
+E2.obj: E2.cpp.obj
+
+.PHONY : E2.obj
+
+# target to build an object file
+E2.cpp.obj:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/E2.cpp.obj
+.PHONY : E2.cpp.obj
+
+E2.i: E2.cpp.i
+
+.PHONY : E2.i
+
+# target to preprocess a source file
+E2.cpp.i:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/E2.cpp.i
+.PHONY : E2.cpp.i
+
+E2.s: E2.cpp.s
+
+.PHONY : E2.s
+
+# target to generate assembly for a file
+E2.cpp.s:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/E2.cpp.s
+.PHONY : E2.cpp.s
+
+HashFunction.obj: HashFunction.cpp.obj
+
+.PHONY : HashFunction.obj
+
+# target to build an object file
+HashFunction.cpp.obj:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/HashFunction.cpp.obj
+.PHONY : HashFunction.cpp.obj
+
+HashFunction.i: HashFunction.cpp.i
+
+.PHONY : HashFunction.i
+
+# target to preprocess a source file
+HashFunction.cpp.i:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/HashFunction.cpp.i
+.PHONY : HashFunction.cpp.i
+
+HashFunction.s: HashFunction.cpp.s
+
+.PHONY : HashFunction.s
+
+# target to generate assembly for a file
+HashFunction.cpp.s:
+	$(MAKE) -f CMakeFiles\E2.dir\build.make CMakeFiles/E2.dir/HashFunction.cpp.s
+.PHONY : HashFunction.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -188,6 +269,15 @@ help:
 	@echo ... BigInteger.obj
 	@echo ... BigInteger.i
 	@echo ... BigInteger.s
+	@echo ... DigitalSignature.obj
+	@echo ... DigitalSignature.i
+	@echo ... DigitalSignature.s
+	@echo ... E2.obj
+	@echo ... E2.i
+	@echo ... E2.s
+	@echo ... HashFunction.obj
+	@echo ... HashFunction.i
+	@echo ... HashFunction.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

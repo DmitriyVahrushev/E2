@@ -1,3 +1,3 @@
-C:/Users/Dmitriy/CLionProjects/E2/cmake-build-debug/CMakeFiles/E2.dir
-C:/Users/Dmitriy/CLionProjects/E2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Dmitriy/CLionProjects/E2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/repos/E2/cmake-build-debug/CMakeFiles/E2.dir
+D:/repos/E2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/repos/E2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
