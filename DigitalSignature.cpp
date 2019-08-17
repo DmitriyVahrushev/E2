@@ -2,8 +2,10 @@
 // Created by Dmitriy on 01.07.2019.
 //
 
+#include <iostream>
 #include "DigitalSignature.h"
 //функция для вовзедения в степень по модулю. Используются "длинные" числа
+
 BigInteger powmod(BigInteger a, BigInteger d, BigInteger n)
 {
     BigInteger b = 1;
@@ -77,7 +79,7 @@ void check_signature(BigInteger r, BigInteger s, BigInteger p, BigInteger q, Big
     //Вычисление левой и правой частей уравнения проверки.
     BigInteger right = powmod(r, temp, p);
     BigInteger left = (powmod(g, s, p)* powmod(y,pi,p))%p;
-    cout<<"right = "<<right.getNumber()<<"  left = "<<left.getNumber()<<endl;
+    std::cout<<"right = "<<right.getNumber()<<"  left = "<<left.getNumber()<<std::endl;
     //Сравнение двух частей. В случае их совпадения - хэш соответствует подписи.
     if ( right == left ){
         std::cout<<"Successful \n";

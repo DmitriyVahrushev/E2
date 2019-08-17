@@ -2,6 +2,7 @@
 // Created by Dmitriy on 01.07.2019.
 //
 
+#include <cstdint>
 #include "HashFunction.h"
 //хэш функция, возвращает 128 битный хэш
 //Size - длина open_data в байтах

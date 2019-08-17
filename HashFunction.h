@@ -6,9 +6,5 @@
 #define E2_HASHFUNCTION_H
 
 
-class HashFunction {
-
-};
-
 
 #endif //E2_HASHFUNCTION_H

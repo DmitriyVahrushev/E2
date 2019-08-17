@@ -7,7 +7,7 @@ file(REMOVE_RECURSE
   "E2.pdb"
   "E2.exe"
   "E2.exe.manifest"
-  "libE2.dll.a"
+  "E2.lib"
 )
 
 # Per-language clean rules from dependency scanning.
