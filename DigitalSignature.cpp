@@ -9,15 +9,11 @@
 BigInteger powmod(BigInteger a, BigInteger d, BigInteger n)
 {
     BigInteger b = 1;
-    while (d>0)
-    {
-        if (d % 2 == 0)
-        {
+    while (d>0){
+        if (d % 2 == 0){
             d /= 2;
             a = (a * a) % n;
-        }
-        else
-        {
+        }else{
             d--;
             b = (b * a) % n;
         }
@@ -79,7 +75,6 @@ void check_signature(BigInteger r, BigInteger s, BigInteger p, BigInteger q, Big
     //Вычисление левой и правой частей уравнения проверки.
     BigInteger right = powmod(r, temp, p);
     BigInteger left = (powmod(g, s, p)* powmod(y,pi,p))%p;
-    std::cout<<"right = "<<right.getNumber()<<"  left = "<<left.getNumber()<<std::endl;
     //Сравнение двух частей. В случае их совпадения - хэш соответствует подписи.
     if ( right == left ){
         std::cout<<"Successful \n";
